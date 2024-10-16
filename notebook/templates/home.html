@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Profile</title>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4267B2;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-header {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h1 {
+    margin: 0;
+}
+
+.profile-info button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-info button:hover {
+    background-color: #36a420;
+}
+
+.posts {
+    padding: 20px;
+}
+
+.posts h2 {
+    margin-bottom: 10px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4267B2;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Notebook</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-header">
+            <div class="profile-picture">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>Your Name</h1>
+                <p>Bio: This is your bio description.</p>
+                <button>Edit Profile</button>
+            </div>
+        </div>
+        <section class="posts">
+            <h2>Posts</h2>
+            <div class="post">
+                <p>This is your first post!</p>
+            </div>
+            <div class="post">
+                <p>This is another post!</p>
+            </div>
+            <div class="post">
+                <p>Feeling great today!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Notebook</p>
+        <a href="/logout">logout</a>
+    </footer>
+</body>
+</html>
